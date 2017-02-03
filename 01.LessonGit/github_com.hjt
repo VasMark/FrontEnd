@@ -1,0 +1,212 @@
+<TreePad version 7.0>
+
+<bmarks>
+<end bmarks> 5P9i0s8y19Z
+
+
+<options>
+icontransp=0
+<end options> 5P9i0s8y19Z
+
+<scrpbk>
+
+<end scrpbk> 5P9i0s8y19Z
+id=3530
+nodeguid=2365DAC2232CCF19D490517DE8DC086790856996
+dtch=20170201-183756
+usrch=IPA
+dtcr=20170201-183715
+usrcr=IPA
+dt=RTF
+<node>
+github.com
+0
+{\rtf1\ansi\deff0\deftab850{\fonttbl{\f0\fnil\fcharset204 microsoft sans serif;}{\f1\fnil\fcharset2 symbol;}{\f2\fnil\fcharset2 WingDings;}}{\colortbl\red0\green0\blue0;\red255\green0\blue0;\red0\green128\blue0;\red0\green0\blue255;\red255\green255\blue0;\red255\green0\blue255;\red128\green0\blue128;\red128\green0\blue0;\red0\green255\blue0;\red0\green255\blue255;\red0\green128\blue128;\red0\green0\blue128;\red255\green255\blue255;\red192\green192\blue192;\red128\green128\blue128;\red0\green0\blue0;\red255\green128\blue128;}\wptoolsver4\wpprheadfoot0\paperw11906\paperh16838\margl737\margr737\margt850\margb850\headery720\footery720{\*\listtable{\list\listtemplateid19690212{\listlevel\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent360\levelnfc1{\leveltext\'02\'00.;}{\levelnumbers\'01;}}
+{\listlevel\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent360\levelnfc3{\leveltext\'02\'01.;}{\levelnumbers\'01;}}
+{\listlevel\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent360\levelnfc0{\leveltext\'02\'02.;}{\levelnumbers\'01;}}
+{\listlevel\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent360\levelnfc4{\leveltext\'02\'03);}{\levelnumbers\'01;}}
+{\listlevel\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent360\levelnfc2{\leveltext\'02\'04);}{\levelnumbers\'01;}}
+{\listlevel\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent360\levelnfc4{\leveltext\'02\'05);}{\levelnumbers\'01;}}
+{\listlevel\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent360\levelnfc0{\leveltext\'02\'06);}{\levelnumbers\'01;}}
+{\listlevel\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent360\levelnfc0{\leveltext\'02\'07);}{\levelnumbers\'01;}}
+{\listlevel\leveljc0\levelfollow0\levelstartat1\levelspace0\levelindent360\levelnfc0{\leveltext\'02\'08);}{\levelnumbers\'01;}}
+\listid1194737}}{\*\listoverridetable{\listoverride\listid1194737\listoverridecount0\ls1}}\endnhere\sectdefaultcl{\pard{\ql\li0\fi0\ri0\sb0\sl0\sa0 \plain\f0\fs20\cf0 VasMark\par
+\ql\li0\fi0\ri0\sb0\sl0\sa0 \plain\f0\fs20\cf0\uldb vas.mark@i.ua\par
+\ql\li0\fi0\ri0\sb0\sl0\sa0 \plain\f0\fs20\cf0\cb16\uldb vas.mark@gmail.com}}
+}
+
+<end node> 5P9i0s8y19Z
+id=3532
+nodeguid=E1A5287EA8833BE17B12E39A150864CDC37C5B1C
+dtch=20170203-090610
+usrch=IPA
+dtcr=20170203-071130
+usrcr=IPA
+dt=Text
+<node>
+01. Preparation
+1
+1. Preparation
+Goals
+To be fully prepared to work with Git.
+
+01 Setting up name and e-mail address
+If you've never used git before, first you need to set up your name and e-mail. Run the following commands to let git know your name and e-mail address. If git is already installed, skip down to the end of the line.
+
+RUN:
+git config --global user.name "Your Name"
+git config --global user.email "your_email@whatever.com"
+
+02 Installation Options line endings
+Also, for users of Unix/Mac:
+
+RUN:
+git config --global core.autocrlf input
+git config --global core.safecrlf true
+For Windows users:
+
+RUN:
+git config --global core.autocrlf true
+git config --global core.safecrlf true
+
+<end node> 5P9i0s8y19Z
+id=3534
+nodeguid=E324BCED8EE9B57CA9DF22DFEB95A6459FAF32C4
+dtch=20170203-091147
+usrch=IPA
+dtcr=20170203-084049
+usrcr=IPA
+dt=Text
+<node>
+02. «амена LF на CRLF
+1
+«амена LF на CRLF
+
+Published: 22.04.2011
+
+ѕри добавлении проекта в git-репозиторий, последний заругалс€ на файл reset.css, вз€тый мной где-то на бескрайних просторах интернета: fatal: LF would be replaced by CRLF in ...
+
+Ќе устроило его, что переносы строк были в Unix-формате, так как дело происходило под Windows. ќчень просто конвертировать переносы строк в Windows-формат помогает текстовый редактор Notepad++: ѕравка>EOL конверси€>ѕреобразовать в WIN-формат.
+
+Ќасчет git-репозитори€: хорошо, если это был один файл, но что делать, если файлов много, и они вперемешку, unix и win? —амое простое, что можно сделать - отключить проверку формата:
+
+$ git config --global core.autocrlf false
+$ git config --global core.safecrlf false
+<end node> 5P9i0s8y19Z
+id=3533
+nodeguid=277DFF54A75A7AF6226C20E40C88540E26B81E09
+dtch=20170203-091450
+usrch=IPA
+dtcr=20170203-071316
+usrcr=IPA
+dt=Text
+<node>
+03. Creating a Project
+1
+3. Creating a Project
+Goals
+To learn how to create a git repository from scratch.
+
+01 Create a УHello, WorldФ page
+Get started in an empty working directory (for example, Work, if you downloaded the file from the previous step) and create an empty directory named УhelloФ, then create a hello.html file in it with the following contents.
+
+RUN:
+mkdir hello
+cd hello
+touch hello.html
+FILE: HELLO.HTML
+Hello, World
+
+02 Create a repository
+So you have a directory that contains one file. Run the git init in order to create a git repo from that directory.
+
+RUN:
+git init
+RESULT:
+$ git init
+Initialized empty Git repository in /Users/alex/Documents/Presentations/githowto/auto/hello/.git/
+
+03 Add the page to the repository
+Now letТs add the УHello, WorldФ page to the repository.
+
+RUN:
+git add hello.html
+git commit -m "First Commit"
+You will see Е
+
+RESULT:
+$ git add hello.html
+$ git commit -m "First Commit"
+[master (root-commit) 911e8c9] First Commit
+ 1 files changed, 1 insertions(+), 0 deletions(-)
+ create mode 100644 hello.html
+<end node> 5P9i0s8y19Z
+id=3535
+nodeguid=4FE37B5F4BA2F8C58C72C42A3447E5F43A36E1FC
+dtch=20170203-090555
+usrch=IPA
+dtcr=20170203-090153
+usrcr=IPA
+dt=Text
+<node>
+04. Checking the status
+1
+4. Checking the status of the repository
+Goals
+To learn how to check the repositoryТs status
+01 Check the status of the repository
+Use the git status command, to check the current state of the repository.
+
+RUN:
+git status
+You will see
+
+RESULT:
+$ git status
+# On branch master
+nothing to commit (working directory clean)
+The command checks the status and reports that thereТs nothing to commit, meaning the repository stores the current state of the working directory, and there are no changes to record.
+
+We will use the git status, to keep monitoring the states of both the working directory and the repository.
+
+<end node> 5P9i0s8y19Z
+id=3536
+nodeguid=B28F20A3A678906D7A131BEA51050DE88CACA58E
+dtch=20170203-090541
+usrch=IPA
+dtcr=20170203-090512
+usrcr=IPA
+dt=Text
+<node>
+05.Making changes
+1
+5. Making changes
+Goals
+To learn to monitor the working directoryТs state
+01 Changing the УHello, WorldФ page
+LetТs add some HTML-tags to our greeting. Change the file contents to:
+
+FILE: HELLO.HTML
+<h1>Hello, World!</h1>
+02 Checking the status
+Check the working directoryТs status.
+
+RUN:
+git status
+You will see Е
+
+RESULT:
+$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#   modified:   hello.html
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+The first important aspect here is that git knows hello.html file has been changed, but these changes are not yet committed to the repository.
+
+Another aspect is that the status message hints about what to do next. If you want to add these changes to the repository, use git add. To undo the changes use git checkout.
+
+<end node> 5P9i0s8y19Z
